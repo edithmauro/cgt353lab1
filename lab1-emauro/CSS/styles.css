@@ -1,0 +1,239 @@
+/* Nav Header */
+.nav{
+    overflow: hidden;
+    background-color: #000;
+}
+
+.nav a {
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    background-color: black;
+    color: #FFF;
+    padding: 15px;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/*Index*/
+
+    h1{
+    color: #565BE9; 
+    text-align: center;
+    }       
+
+    h3, h4{
+        text-align: center;
+    }
+
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    p{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 18px;
+    }
+
+    figcaption{
+        text-align: center;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    h2{
+    text-align: center; 
+    }
+
+    .RoundShadow{
+        border-radius: 20%;
+    }
+
+/*Schedule*/
+    table {
+    font-family: arial, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    }
+
+    td,
+    th {
+    border: 1px solid #777F78;
+    text-align: center;
+    padding: 5px;
+    }
+
+    /*individual classes (in order of day of the week)*/
+    tr:nth-child(2)  td:nth-child(3), /*CGT 377*/
+    tr:nth-child(4)  td:nth-child(3), /*CGT 353*/
+    tr:nth-child(3)  td:nth-child(3), /*AD 105*/
+    tr:nth-child(8)  td:nth-child(4), /*COM 318*/
+    tr:nth-child(2)  td:nth-child(5), /*CGT 377*/
+    tr:nth-child(4)  td:nth-child(4), /*CGT 356*/
+    tr:nth-child(3)  td:nth-child(4), /*AD 105*/
+    tr:nth-child(8)  td:nth-child(6){ /*COM 318*/
+    background-color: #979797;
+    font-weight: bold;
+    }
+    /*header and side*/
+    tr td:nth-child(1),
+    tr:nth-child(1){
+    background-color: #ddd;
+    }
+
+    tr td:nth-child(2),
+    tr td:nth-child(3),
+    tr td:nth-child(4),
+    tr td:nth-child(5),
+    tr td:nth-child(6),
+    tr td:nth-child(7){
+        width: 12.5%;
+    }
+
+    /*377*/
+    tr:nth-child(2)  td:nth-child(3),
+    tr:nth-child(2)  td:nth-child(5){
+        background-color: #a2c2e5;
+    }
+
+    /*353*/
+    tr:nth-child(4)  td:nth-child(3){
+        background-color: #6eb6b8;
+    }
+
+    /*105*/
+    tr:nth-child(3)  td:nth-child(3),
+    tr:nth-child(3)  td:nth-child(4){
+        background-color: #fbb698;
+    }
+
+    /*318*/
+    tr:nth-child(8)  td:nth-child(4),
+    tr:nth-child(8)  td:nth-child(6){
+        background-color: 	#FDCF8D;
+    }
+
+    /*356*/
+    tr:nth-child(4)  td:nth-child(4){
+        background-color: #E29ABF;
+    }
+
+/*Suprise!!!!*/
+
+#surprise{
+    background-color: #FF4E30;
+    background-image: linear-gradient( #FF4E30, #FFBD30);
+}
+
+/*Hot Ones Image + Overlay with link*/
+.overlay {
+    position: relative;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.overlay:hover .banner {
+  opacity: 0.5;
+}
+
+.overlay:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000;
+  padding: 16px 32px;
+}
+
+.text a{
+    color: white;
+    font-size: 16px;
+}
+
+/*Last Dab Hot Sauce Spin Effect*/
+.LastDab img{
+    width: 20%;
+    height: 20%;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.LastDab img:hover {
+    transform: rotate(360deg);
+}
+
+#surprise h1{
+    color: white;
+    text-shadow: 1px 1px 10px #000;
+    font-size: 50px;
+}
+
+/* Keyframe Interview Slideshow */
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  11.11%   { opacity: 1; }
+  33.33%  { opacity: 1; }
+  44.44%  { opacity: 0; }
+  66.66% {opacity: 0;}
+  100% { opacity: 0; }
+}
+
+.SlideShow{
+    position: relative;
+    height: 400px;
+}
+
+.interviews img { 
+    position:absolute; 
+    width: 50%;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity:0; 
+    animation-name: fade; 
+    animation-duration: 12s; 
+    animation-iteration-count: infinite; }
+
+.interviews img:nth-child(1) {
+    animation-delay: 0s;
+}
+.interviews img:nth-child(2) {
+    animation-delay: 3s;
+}
+.interviews img:nth-child(3) {
+    animation-delay: 6s;
+}
+.interviews img:nth-child(4) {
+    animation-delay: 9s;
+}
+
+
+#surprise h3{
+    text-decoration: underline;
+}
